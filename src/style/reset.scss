@@ -1,0 +1,17 @@
+$fColor: yellow;
+#container {
+    color: $fColor;
+    font-size: 3em;
+}
+.bg {
+    width: 100px;
+    height: 100px;
+}
+.bg1{
+    @extend .bg;
+    background: url(../assets/img/qrcode1.png);
+}
+.bg2{
+    @extend .bg;
+    background: url(../assets/img/qrcode2.png);
+}
