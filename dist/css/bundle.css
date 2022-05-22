@@ -8770,7 +8770,7 @@ body {
     border: 1px solid #88B1F7;
     background: #F4F4F4;
     color: #CBCBCB;
-    width: 9.5vw;
+    width: 8.9vw;
     height: 12vw;
     display: flex;
     align-items: center;
@@ -8908,11 +8908,66 @@ body {
   }
   
   /*--------------------------------------------------------------
+  # PortfolioNav
+  --------------------------------------------------------------*/
+  .portfolioNav {
+    padding: 0;
+    background: #004fd8;
+  }
+  .portfolioNav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0 1rem;
+  }
+  .portfolioNav ul li{
+    display: flex;
+    align-items: center;
+    padding: 0 1.5rem;
+    margin-left: 1rem;
+    height: 3.5rem;
+  }
+  .portfolioNav ul .active{
+    background: #023A98;
+  }
+  .portfolioNav ul .active a::after{
+    content: '';
+    width: 46px;
+    height: 3px;
+    background-color: #ffffff;
+    position: absolute;
+    box-sizing: border-box;
+    margin-top: 28px;
+    margin-left: -65px;
+  }
+  .portfolioNav ul li a{
+    color: #ffffff;
+  }
+  /*--------------------------------------------------------------
   # Portfolio
   --------------------------------------------------------------*/
+  .portfolio {
+    padding: 20px 0;
+  }
+  .portfolio #portfolio-title {
+    padding-top: 3px;
+  }
+  .portfolio #portfolio-all {
+    cursor: pointer;
+    display: inline-block;
+    padding: 8px 20px 10px 20px;
+    margin-left: 20px;
+    margin-bottom: 1rem;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #4d4643;
+    background: #DBE4F4;
+    transition: all 0.3s;
+    border-radius: 25px;
+  }
   .portfolio #portfolio-flters {
     padding: 0;
-    margin: 0 auto 50px auto;
     list-style: none;
     text-align: center;
   }
@@ -8920,17 +8975,19 @@ body {
     cursor: pointer;
     display: inline-block;
     padding: 8px 20px 10px 20px;
+    margin-left: 20px;
     font-size: 14px;
     font-weight: 400;
     line-height: 1;
     text-transform: uppercase;
     color: #4d4643;
+    background: #DBE4F4;
     transition: all 0.3s;
-    border-radius: 50px;
+    border-radius: 2px;
   }
   .portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
-    color: #fff;
-    background: #999999;
+    color: #ffffff;
+    background: #005EFD;
   }
   .portfolio #portfolio-flters li:last-child {
     margin-right: 0;
@@ -8996,6 +9053,9 @@ body {
     opacity: 1;
     bottom: 20px;
   }
+  .portfolio .portfolio-container .img-fluid{
+    border: 2px solid #99BFFE;
+  }
   
   /*--------------------------------------------------------------
   # Portfolio Details
@@ -9050,7 +9110,40 @@ body {
   .portfolio-details .portfolio-description p {
     padding: 0;
   }
-  
+  /*--------------------------------------------------------------
+  # Video
+  --------------------------------------------------------------*/
+  .video {
+    padding: 10px 0;
+    margin: 0 5rem 0 5rem;
+  }
+  .video .video-container {
+    margin: 0;
+    display: flex;
+  }
+  .video .video-container .video-main {
+    width: 60rem;
+    height: 30rem;
+  }
+  .video .video-container .video-menu {
+    display: flex;
+    align-content: flex-start;
+    padding-left: 5px;
+    background-color: #ffffff;
+  }
+  .video .video-container .video-menu .title {
+    margin: 5px;
+  }
+  .video .video-container .video-menu li {
+    font-size: 13px;
+    list-style-type: none;
+    margin: 20px 10px;
+  }
+  .video .video-container .video-title {
+    font-size: 20px;
+    background-color: #ffffff;
+    padding: 20px;
+  }
   /*--------------------------------------------------------------
   # Clients
   --------------------------------------------------------------*/
